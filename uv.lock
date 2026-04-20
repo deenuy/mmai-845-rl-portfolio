@@ -1760,6 +1760,8 @@ dependencies = [
     { name = "requests" },
     { name = "scipy", version = "1.15.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "stable-baselines3" },
+    { name = "torch" },
     { name = "tqdm" },
     { name = "yfinance" },
 ]
@@ -1805,7 +1807,9 @@ requires-dist = [
     { name = "requests", specifier = ">=2.33.0" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.11" },
     { name = "scipy", specifier = ">=1.12" },
+    { name = "stable-baselines3", specifier = ">=2.8.0" },
     { name = "stable-baselines3", marker = "extra == 'train'", specifier = ">=2.3" },
+    { name = "torch", specifier = ">=2.10.0" },
     { name = "torch", marker = "extra == 'deep-rl'", specifier = ">=2.2" },
     { name = "torch", marker = "extra == 'train'", specifier = ">=2.2" },
     { name = "tqdm", specifier = ">=4.66" },

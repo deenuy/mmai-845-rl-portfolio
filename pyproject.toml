@@ -21,6 +21,8 @@ dependencies = [
     "gym>=0.26.2",
     "yfinance>=0.2.40",
     "requests>=2.33.0", # security fix for CVE-2026-25645 (transitive dependency)
+    "stable-baselines3>=2.8.0",
+    "torch>=2.10.0",
 ]
 
 [project.optional-dependencies]
