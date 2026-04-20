@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: mmai-845-rl-projects
+Version: 0.1.0
+Summary: Reinforcement learning project for MMAI 845 using Gymnasium, classic control environments, and deep RL extensions foundation for an RL-powered portfolio management system.
+Author-email: Deenu Gengiti <deenuy@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26
+Requires-Dist: pandas>=2.1
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: scipy>=1.12
+Requires-Dist: gymnasium>=0.29
+Requires-Dist: tqdm>=4.66
+Requires-Dist: jupyter>=1.0
+Requires-Dist: ipykernel>=6.29
+Requires-Dist: gym>=0.26.2
+Requires-Dist: yfinance>=0.2.40
+Requires-Dist: requests>=2.33.0
+Provides-Extra: atari
+Requires-Dist: gymnasium[atari]>=0.29; extra == "atari"
+Requires-Dist: ale-py>=0.10; extra == "atari"
+Provides-Extra: deep-rl
+Requires-Dist: torch>=2.2; extra == "deep-rl"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.4.2; extra == "dev"
+Requires-Dist: ruff>=0.11; extra == "dev"
+Requires-Dist: pre-commit>=4.2; extra == "dev"
+Provides-Extra: train
+Requires-Dist: stable-baselines3>=2.3; extra == "train"
+Requires-Dist: torch>=2.2; extra == "train"

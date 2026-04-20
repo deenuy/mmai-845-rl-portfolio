@@ -1,0 +1,16 @@
+{
+  "type": "illustrative_example",
+  "description": "Hypothetical long-run net-growth comparison used only for product motivation in the presentation.",
+  "initial_investment_usd": 10000,
+  "window": {
+    "start_year": 1975,
+    "end_year": 2025
+  },
+  "annual_net_return_assumptions": {
+    "Active Mutual Fund": 0.082,
+    "S&P 500 Fund": 0.093,
+    "Index ETF": 0.095,
+    "Our Profile Buy & Hold": 0.101
+  },
+  "usage_note": "This is not a historical backtest of the project. It is a presentation graphic intended to illustrate how fee drag and product structure can change long-run wealth accumulation."
+}

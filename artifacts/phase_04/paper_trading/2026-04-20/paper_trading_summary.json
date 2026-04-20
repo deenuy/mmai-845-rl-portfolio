@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-04-20T17:58:40.256042",
+  "assumed_run_time": "2026-04-20 12:00 America/Toronto",
+  "latest_market_date": "2026-04-20",
+  "simulation_start": "2026-01-01",
+  "initialization": {
+    "date": "2026-01-02",
+    "target_weights": {
+      "RY": 0.2,
+      "MSFT": 0.2,
+      "RKLB": 0.2,
+      "XOM": 0.2,
+      "PG": 0.2
+    },
+    "shares_after": {
+      "RY": 117,
+      "MSFT": 42,
+      "RKLB": 263,
+      "XOM": 163,
+      "PG": 141
+    },
+    "cash_after": 125.69407569885152,
+    "executed_symbols": [
+      "RY",
+      "MSFT",
+      "RKLB",
+      "XOM",
+      "PG"
+    ],
+    "close_prices": {
+      "RY": 170.77999877929688,
+      "MSFT": 472.94000244140625,
+      "RKLB": 75.98999786376953,
+      "XOM": 122.6500015258789,
+      "PG": 141.7899932861328
+    },
+    "symbol_results": {
+      "RY": {
+        "executed": true,
+        "side": "buy",
+        "shares_delta": 117,
+        "execution_price": 170.8653887786865,
+        "commission_paid": 1.99,
+        "slippage_paid": 9.990629928588868,
+        "trade_notional": 19981.259857177734,
+        "shares_after": 117
+      },
+      "MSFT": {
+        "executed": true,
+        "side": "buy",
+        "shares_delta": 42,
+        "execution_price": 473.1764724426269,
+        "commission_paid": 1.99,
+        "slippage_paid": 9.931740051269532,
+        "trade_notional": 19863.480102539062,
+        "shares_after": 42
+      },
+      "RKLB": {
+        "executed": true,
+        "side": "buy",
+        "shares_delta": 263,
+        "execution_price": 76.02799286270141,
+        "commission_paid": 1.99,
+        "slippage_paid": 9.992684719085693,
+        "trade_notional": 19985.369438171387,
+        "shares_after": 263
+      },
+      "XOM": {
+        "executed": true,
+        "side": "buy",
+        "shares_delta": 163,
+        "execution_price": 122.71132652664184,
+        "commission_paid": 1.99,
+        "slippage_paid": 9.99597512435913,
+        "trade_notional": 19991.95024871826,
+        "shares_after": 163
+      },
+      "PG": {
+        "executed": true,
+        "side": "buy",
+        "shares_delta": 141,
+        "execution_price": 141.86088828277587,
+        "commission_paid": 1.99,
+        "slippage_paid": 9.996194526672364,
+        "trade_notional": 19992.389053344727,
+        "shares_after": 141
+      }
+    }
+  },
+  "portfolio_value": 100378.78353775789,
+  "cash": 16100.534499061594,
+  "cash_weight": 0.16039778458766948,
+  "core_symbol": "XOM",
+  "review_step": false,
+  "target_weights": {
+    "RY": 0.11476615787220848,
+    "MSFT": 0.14160062787280017,
+    "RKLB": 0.17496387130314228,
+    "XOM": 0.25451009628956317,
+    "PG": 0.15545289454760844
+  },
+  "position_weights": {
+    "RY": 0.11477166032903721,
+    "MSFT": 0.14160741690674744,
+    "RKLB": 0.1746799393515373,
+    "XOM": 0.25452229876147014,
+    "PG": 0.15402090006353833
+  },
+  "position_dashboard": {
+    "rows": [
+      {
+        "symbol": "RY",
+        "shares": 64,
+        "latest_price": 180.00999450683594,
+        "market_value": 11520.6396484375,
+        "cost_basis": 10936.473428844485,
+        "unrealized_pnl": 584.1662195930148,
+        "unrealized_pnl_pct": 0.053414496308499336,
+        "realized_pnl": -321.289123943295,
+        "commission_paid": 5.97,
+        "position_weight": 0.11477166032903721,
+        "target_weight": 0.11476615787220848
+      },
+      {
+        "symbol": "MSFT",
+        "shares": 34,
+        "latest_price": 418.07000732421875,
+        "market_value": 14214.380249023438,
+        "cost_basis": 14628.010781857747,
+        "unrealized_pnl": -413.63053283430963,
+        "unrealized_pnl_pct": -0.028276608419465415,
+        "realized_pnl": -1510.8838658625914,
+        "commission_paid": 45.77,
+        "position_weight": 0.14160741690674744,
+        "target_weight": 0.14160062787280017
+      },
+      {
+        "symbol": "RKLB",
+        "shares": 196,
+        "latest_price": 89.45999908447266,
+        "market_value": 17534.15982055664,
+        "cost_basis": 15133.935527498194,
+        "unrealized_pnl": 2400.224293058447,
+        "unrealized_pnl_pct": 0.15859881844331014,
+        "realized_pnl": -707.5392835522189,
+        "commission_paid": 5.97,
+        "position_weight": 0.1746799393515373,
+        "target_weight": 0.17496387130314228
+      },
+      {
+        "symbol": "XOM",
+        "shares": 173,
+        "latest_price": 147.67999267578125,
+        "market_value": 25548.638732910156,
+        "cost_basis": 26864.728120233813,
+        "unrealized_pnl": -1316.0893873236564,
+        "unrealized_pnl_pct": -0.048989492148718686,
+        "realized_pnl": 1288.4688293478987,
+        "commission_paid": 91.53999999999995,
+        "position_weight": 0.25452229876147014,
+        "target_weight": 0.25451009628956317
+      },
+      {
+        "symbol": "PG",
+        "shares": 107,
+        "latest_price": 144.49000549316406,
+        "market_value": 15460.430587768555,
+        "cost_basis": 15448.553982594025,
+        "unrealized_pnl": 11.876605174529686,
+        "unrealized_pnl_pct": 0.000768784262132956,
+        "realized_pnl": 363.4797841000707,
+        "commission_paid": 17.91,
+        "position_weight": 0.15402090006353833,
+        "target_weight": 0.15545289454760844
+      }
+    ],
+    "total_market_value": 84278.24903869629,
+    "total_unrealized_pnl": 1266.5471976680255,
+    "initial_date": "2026-01-02"
+  },
+  "trades": {
+    "sell_first": [
+      {
+        "symbol": "PG",
+        "side": "sell",
+        "shares_delta": -1,
+        "trade_notional": 144.49000549316406,
+        "execution_price": 144.4177604904175,
+        "commission_paid": 1.99,
+        "slippage_paid": 0.07224500274658203,
+        "cash_effect": 142.42776049041748
+      }
+    ],
+    "buy_second": [
+      {
+        "symbol": "RKLB",
+        "side": "buy",
+        "shares_delta": 17,
+        "trade_notional": 1520.8199844360352,
+        "execution_price": 89.50472908401488,
+        "commission_paid": 1.99,
+        "slippage_paid": 0.7604099922180176,
+        "cash_effect": -1523.5703944282532
+      }
+    ]
+  },
+  "symbols": [
+    "RY",
+    "MSFT",
+    "RKLB",
+    "XOM",
+    "PG"
+  ]
+}

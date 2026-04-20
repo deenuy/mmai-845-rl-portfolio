@@ -1,0 +1,202 @@
+{
+  "evaluation_window": {
+    "start": "2022-01-01",
+    "end": "2024-12-31"
+  },
+  "symbols": [
+    "RY",
+    "MSFT",
+    "RKLB",
+    "XOM",
+    "PG"
+  ],
+  "cash_yield": 0.0,
+  "reward_mode": "log_return_with_turnover_penalty",
+  "turnover_penalty_coef": 0.001,
+  "focus_symbol": null,
+  "focus_target_weight": 0.6,
+  "focus_weight_penalty_coef": 0.01,
+  "focus_start_date": null,
+  "focus_end_date": null,
+  "strategic_review_interval_days": 63,
+  "residual_freeze_enabled": true,
+  "extreme_residual_drift_threshold": 0.2,
+  "feature_preset": "phase3_group_b_core",
+  "ppo": {
+    "initial_portfolio_value": 100000.0,
+    "final_portfolio_value": 170990.3201260956,
+    "cumulative_return": 0.7099032012609561,
+    "sharpe_ratio": 1.0286116311965214,
+    "max_drawdown": -0.1933160887984987,
+    "executed_trades": 884,
+    "trade_rate": 1.1739707835325366,
+    "average_turnover": 0.032758215659105236
+  },
+  "per_symbol_trade_counts": {
+    "RY": 113,
+    "MSFT": 205,
+    "RKLB": 52,
+    "XOM": 404,
+    "PG": 110
+  },
+  "portfolio_structure": {
+    "average_target_weights": {
+      "RY": 0.16111458104407675,
+      "MSFT": 0.20150962584891807,
+      "RKLB": 0.16540050115615582,
+      "XOM": 0.19069991258042893,
+      "PG": 0.12919601862128896
+    },
+    "average_position_weights": {
+      "RY": 0.16104483939945066,
+      "MSFT": 0.2009818945033243,
+      "RKLB": 0.16540242534308097,
+      "XOM": 0.1903999591395239,
+      "PG": 0.12902734409868596
+    },
+    "core_symbol_counts": {
+      "RY": 109,
+      "MSFT": 222,
+      "RKLB": 120,
+      "XOM": 279,
+      "PG": 23
+    },
+    "average_target_concentration": 0.25931701569264726,
+    "average_position_concentration": 0.2588982013468248,
+    "average_cash_weight": 0.15314353751593426,
+    "review_step_count": 12
+  },
+  "baselines": {
+    "evaluation_window": {
+      "start": "2022-01-01",
+      "end": "2024-12-31"
+    },
+    "symbols": [
+      "RY",
+      "MSFT",
+      "RKLB",
+      "XOM",
+      "PG"
+    ],
+    "equal_weight_buy_and_hold": {
+      "summary": {
+        "steps": 753,
+        "final_portfolio_value": 143699.5821439123,
+        "cumulative_reward": 0.3625546992562815,
+        "final_cash": 466.08371175288266,
+        "final_shares_by_symbol": {
+          "RY": 186,
+          "MSFT": 59,
+          "RKLB": 1638,
+          "XOM": 314,
+          "PG": 122
+        }
+      },
+      "metrics": {
+        "initial_portfolio_value": 100000.0,
+        "final_portfolio_value": 143699.5821439123,
+        "cumulative_return": 0.43699582143912297,
+        "sharpe_ratio": 0.7542436254970102,
+        "max_drawdown": -0.21161978518076774,
+        "executed_trades": 5,
+        "trade_rate": 0.006640106241699867,
+        "average_turnover": 0.012583296916670247
+      }
+    },
+    "equal_weight_daily_rebalance": {
+      "summary": {
+        "steps": 753,
+        "final_portfolio_value": 150995.61747535638,
+        "cumulative_reward": 0.4120806270636366,
+        "final_cash": 463.0689390557193,
+        "final_shares_by_symbol": {
+          "RY": 250,
+          "MSFT": 71,
+          "RKLB": 1185,
+          "XOM": 280,
+          "PG": 180
+        }
+      },
+      "metrics": {
+        "initial_portfolio_value": 100000.0,
+        "final_portfolio_value": 150995.61747535638,
+        "cumulative_return": 0.5099561747535639,
+        "sharpe_ratio": 0.750014295576019,
+        "max_drawdown": -0.2593286207687231,
+        "executed_trades": 2637,
+        "trade_rate": 3.50199203187251,
+        "average_turnover": 0.0013280212681290322
+      }
+    },
+    "random_allocation": {
+      "summary": {
+        "steps": 753,
+        "final_portfolio_value": 143775.30934151806,
+        "cumulative_reward": 0.36308154317622127,
+        "final_cash": 17434.002315608643,
+        "final_shares_by_symbol": {
+          "RY": 33,
+          "MSFT": 67,
+          "RKLB": 1498,
+          "XOM": 6,
+          "PG": 330
+        }
+      },
+      "metrics": {
+        "initial_portfolio_value": 100000.0,
+        "final_portfolio_value": 143775.30934151806,
+        "cumulative_return": 0.43775309341518054,
+        "sharpe_ratio": 0.6637441357752175,
+        "max_drawdown": -0.20842878937381615,
+        "executed_trades": 3742,
+        "trade_rate": 4.969455511288181,
+        "average_turnover": 0.7462933569103809
+      }
+    },
+    "cash_only": {
+      "summary": {
+        "steps": 753,
+        "final_portfolio_value": 100000.0,
+        "cumulative_reward": 0.0,
+        "final_cash": 100000.0,
+        "final_shares_by_symbol": {
+          "RY": 0,
+          "MSFT": 0,
+          "RKLB": 0,
+          "XOM": 0,
+          "PG": 0
+        }
+      },
+      "metrics": {
+        "initial_portfolio_value": 100000.0,
+        "final_portfolio_value": 100000.0,
+        "cumulative_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "executed_trades": 0,
+        "trade_rate": 0.0,
+        "average_turnover": 6.640104432065094e-11
+      }
+    },
+    "spy_buy_and_hold": {
+      "symbol": "SPY",
+      "summary": {
+        "steps": 753,
+        "final_portfolio_value": 122597.42466355897,
+        "cumulative_reward": 0.20373583128652822,
+        "final_cash": 106.70109178160784,
+        "final_shares": 209
+      },
+      "metrics": {
+        "initial_portfolio_value": 100000.0,
+        "final_portfolio_value": 122597.42466355897,
+        "cumulative_return": 0.22597424663558963,
+        "sharpe_ratio": 0.47812356708600734,
+        "max_drawdown": -0.2533349951980758,
+        "executed_trades": 1,
+        "trade_rate": 0.0013280212483399733,
+        "average_turnover": 0.0013280212483399733
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+[project]
+name = "mmai-845-rl-projects"
+version = "0.1.0"
+description = "Reinforcement learning project for MMAI 845 using Gymnasium, classic control environments, and deep RL extensions foundation for an RL-powered portfolio management system."
+authors = [
+    { name = "Deenu Gengiti", email = "deenuy@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+dependencies = [
+    "numpy>=1.26", # numerical operations
+    "pandas>=2.1", # experiment tracking / results analysis
+    "matplotlib>=3.8", # reward curves and policy visualizations
+    "scipy>=1.12", # statistical utilities / smoothing
+    "gymnasium>=0.29", # RL environments
+    "tqdm>=4.66", # training progress bars
+    "jupyter>=1.0", # notebook execution
+    "ipykernel>=6.29", # Jupyter kernel
+    "gym>=0.26.2",
+    "yfinance>=0.2.40",
+    "requests>=2.33.0", # security fix for CVE-2026-25645 (transitive dependency)
+]
+
+[project.optional-dependencies]
+atari = [
+    "gymnasium[atari]>=0.29",
+    "ale-py>=0.10",
+]
+
+deep-rl = [
+    "torch>=2.2",
+]
+
+dev = [
+    "pytest>=8.4.2",
+    "ruff>=0.11",
+    "pre-commit>=4.2",
+]
+train = [
+    "stable-baselines3>=2.3",
+    "torch>=2.2",
+]
+
+[tool.uv]
+package = false
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "ruff>=0.11",
+    "pre-commit>=4.2",
+]

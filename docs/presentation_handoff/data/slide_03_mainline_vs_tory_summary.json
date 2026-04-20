@@ -1,0 +1,28 @@
+{
+  "window": {
+    "start": "2022-01-01",
+    "end": "2024-12-31"
+  },
+  "series": {
+    "SPY": {
+      "final_portfolio_value": 122597.42466355897,
+      "sharpe_ratio": 0.47812356708600734,
+      "executed_trades": 1
+    },
+    "Equal Weight Buy & Hold": {
+      "final_portfolio_value": 143699.5821439123,
+      "sharpe_ratio": 0.7542436254970102,
+      "executed_trades": 5
+    },
+    "Mainline PPO": {
+      "final_portfolio_value": 170990.3201260956,
+      "sharpe_ratio": 1.0286116311965214,
+      "executed_trades": 884
+    },
+    "Tory Strategy": {
+      "final_portfolio_value": 190968.6793770917,
+      "sharpe_ratio": 1.0862882023377503,
+      "executed_trades": 1274
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "evaluation_window": {
+    "start": "2022-01-01",
+    "end": "2024-12-31"
+  },
+  "symbols": [
+    "RY",
+    "MSFT",
+    "RKLB",
+    "XOM",
+    "PG"
+  ],
+  "focus_symbol": "MSFT",
+  "max_focus_weight": 0.6,
+  "residual_cash_weight": 0.1,
+  "strategy_mode": "quarterly_rotation",
+  "rotation_focus_weight": 0.5,
+  "quarterly_review_days": 63,
+  "rebalance_interval_days": 21,
+  "focus_drift_threshold": 0.05,
+  "residual_drift_threshold": 0.1,
+  "cash_yield": 0.0,
+  "summary": {
+    "steps": 753,
+    "final_portfolio_value": 190968.6793770917,
+    "cumulative_reward": 0.6469392462930768,
+    "final_cash": 26213.15218020755,
+    "final_shares_by_symbol": {
+      "RY": 210,
+      "MSFT": 49,
+      "RKLB": 2509,
+      "XOM": 130,
+      "PG": 244
+    }
+  },
+  "metrics": {
+    "initial_portfolio_value": 100000.0,
+    "final_portfolio_value": 190968.6793770917,
+    "cumulative_return": 0.909686793770917,
+    "sharpe_ratio": 1.0862882023377503,
+    "max_drawdown": -0.19398040301422492,
+    "executed_trades": 1274,
+    "trade_rate": 1.6918990703851262,
+    "average_turnover": 0.020903512237533332
+  },
+  "equal_weight_buy_and_hold": {
+    "initial_portfolio_value": 100000.0,
+    "final_portfolio_value": 143699.5821439123,
+    "cumulative_return": 0.43699582143912297,
+    "sharpe_ratio": 0.75424362549701,
+    "max_drawdown": -0.21161978518076774,
+    "executed_trades": 5,
+    "trade_rate": 0.006640106241699867,
+    "average_turnover": 0.012583296916670247
+  }
+}
