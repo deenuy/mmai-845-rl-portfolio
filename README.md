@@ -103,40 +103,64 @@ http://127.0.0.1:8080
 
 ---
 
-## TA Evaluation Steps
+## UI Demo
 
-Use the existing sample profile. Do not create a new profile.
+### Home Page
 
-* Click **Example Extended Equal Weight 2026-01-01**
-* Click **Refresh Today's Recommendation**
+<img src="artifacts/images/HomePage.png" width="800"/>
 
-Verify:
-
-* Strategy Snapshot appears
-
-* Portfolio Summary appears
-
-* Order Ticket shows:
-
-  * Sell First
-  * Buy Second
-
-* Click **Review And Confirm Rebalance**
-
-* Click **Confirm Rebalance Complete**
-
-* Click **View Operation History**
+- Verify **Portfolio Profiles** page loads
+- Verify **Saved Profiles** table
+- Click **Example Extended Equal Weight 2026-01-01**
 
 ---
 
-## Pass Criteria
+### Profile Page
 
-* App loads
-* Sample profile opens
-* Recommendation generates
-* Orders displayed
-* Rebalance completes
-* History recorded
+<img src="artifacts/images/ExamplePortfolio.png" width="800"/>
+
+- Verify:
+  - Profile Snapshot
+  - Supported Universe
+  - Saved Holdings
+
+- Click **Refresh Today's Recommendation**
+
+---
+
+### Recommendation and Order Ticket
+
+<img src="artifacts/images/ExamplePortfolio-2.png" width="800"/>
+
+- Verify:
+  - Strategy Snapshot
+  - Portfolio Summary
+  - Order Ticket
+
+- Confirm:
+  - Sell First section
+  - Buy Second section
+
+---
+
+## Evaluation Steps
+
+Use the existing sample profile. Do not create a new profile.
+
+- Click **Example Extended Equal Weight 2026-01-01**
+- Click **Refresh Today's Recommendation**
+
+Verify:
+
+- Strategy Snapshot appears
+- Portfolio Summary appears
+- Order Ticket shows:
+  - Sell First
+  - Buy Second
+
+- Click **Review And Confirm Rebalance**
+- Click **Confirm Rebalance Complete**
+- Click **View Operation History**
 
 ---
 
