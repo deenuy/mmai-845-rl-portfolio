@@ -42,13 +42,13 @@ mmai-845-rl-projects/
 ## Setup
 
 ```bash
-git clone <REPO_URL>
+git clone https://github.com/deenuy/mmai-845-rl-portfolio
 cd mmai-845-rl-projects
 
 python3 -m venv .venv
 source .venv/bin/activate
 
-python -m pip install --upgrade pip setuptools wheel
+python -m pip install --upgrade pip
 ```
 
 Install dependencies (choose one):
@@ -62,22 +62,6 @@ or
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## Validate
-
-```bash
-python scripts/run_product_dashboard.py --help
-python scripts/seed_example_profiles.py --help
-python scripts/export_phase_4_paper_trading.py --help
-python -m pytest tests/unit -q -p no:cacheprovider
-```
-
-Expected:
-
-* help commands work
-* tests pass
 
 ---
 
@@ -109,9 +93,9 @@ http://127.0.0.1:8080
 
 <img src="artifacts/images/HomePage.png" width="800"/>
 
-- Verify **Portfolio Profiles** page loads
-- Verify **Saved Profiles** table
-- Click **Example Extended Equal Weight 2026-01-01**
+* Verify **Portfolio Profiles** page loads
+* Verify **Saved Profiles** table
+* Click **Example Extended Equal Weight 2026-01-01**
 
 ---
 
@@ -119,12 +103,13 @@ http://127.0.0.1:8080
 
 <img src="artifacts/images/ExamplePortfolio.png" width="800"/>
 
-- Verify:
-  - Profile Snapshot
-  - Supported Universe
-  - Saved Holdings
+* Verify:
 
-- Click **Refresh Today's Recommendation**
+  * Profile Snapshot
+  * Supported Universe
+  * Saved Holdings
+
+* Click **Refresh Today's Recommendation**
 
 ---
 
@@ -132,14 +117,16 @@ http://127.0.0.1:8080
 
 <img src="artifacts/images/ExamplePortfolio-2.png" width="800"/>
 
-- Verify:
-  - Strategy Snapshot
-  - Portfolio Summary
-  - Order Ticket
+* Verify:
 
-- Confirm:
-  - Sell First section
-  - Buy Second section
+  * Strategy Snapshot
+  * Portfolio Summary
+  * Order Ticket
+
+* Confirm:
+
+  * Sell First section
+  * Buy Second section
 
 ---
 
@@ -147,20 +134,25 @@ http://127.0.0.1:8080
 
 Use the existing sample profile. Do not create a new profile.
 
-- Click **Example Extended Equal Weight 2026-01-01**
-- Click **Refresh Today's Recommendation**
+* Click **Example Extended Equal Weight 2026-01-01**
+* Click **Refresh Today's Recommendation**
 
 Verify:
 
-- Strategy Snapshot appears
-- Portfolio Summary appears
-- Order Ticket shows:
-  - Sell First
-  - Buy Second
+* Strategy Snapshot appears
 
-- Click **Review And Confirm Rebalance**
-- Click **Confirm Rebalance Complete**
-- Click **View Operation History**
+* Portfolio Summary appears
+
+* Order Ticket shows:
+
+  * Sell First
+  * Buy Second
+
+* Click **Review And Confirm Rebalance**
+
+* Click **Confirm Rebalance Complete**
+
+* Click **View Operation History**
 
 ---
 
